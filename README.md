@@ -1,0 +1,1 @@
+# dasturlashdagi__natija__fulfil
