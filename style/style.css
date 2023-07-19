@@ -33,6 +33,7 @@ body {
     background-color: rgba(14, 17, 34, 0.50);
     left: 0;
     top: 0;
+    padding: 20px;
 
     display: none;
     justify-content: center;
@@ -522,6 +523,10 @@ main .main-cards__card:nth-child(6) p {
     line-height: normal;
 }
 
+.section-card__box p br {
+    display: none;
+}
+
 
 .footer {
     padding: 0 120px;
@@ -793,4 +798,132 @@ main .main-cards__card:nth-child(6) p {
     .footer__right img {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 500.99px) {
+    .calendar strong {
+        font-size: 14px;
+    }
+    .header__left h1 {
+        font-size: 32px;
+    }
+    .header__left-text{
+        font-size: 18px;
+    }
+    .header__left-main b {
+        margin-top: 24px;
+        font-size: 18px;
+    }
+      .header__left-main__card li img {
+        width: 24px;
+        height: 24px;
+    }
+    .header__left-main__card li p {
+        font-size: 16px;
+    }
+    .btn{
+        width: 100%;
+    }
+    .header__right p{
+        display: none;
+    }
+    .royxat__cards{
+        height: 120px;
+        margin-top: -50px;
+    }
+    .royxat__card{
+        transform: rotate(5deg) translateY(23px);
+    }
+    .royxat__card li:nth-child(1), .royxat__card li:nth-child(2), .royxat__card li:nth-child(3), .royxat__card li:nth-child(4) {
+        display: none;
+    }
+    .royxat__card li {
+        font-size: 18px;
+    }
+    main h1 {
+        font-size: 28px;
+    }
+
+    .main-cards__card {
+        padding: 0 20px;
+    }
+
+    main .main-cards__card p{
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+    main .main-cards__card span {
+        font-size: 12px;
+    }
+
+    .section-card {
+        height: 110px;
+    }
+    .section-card__box {
+        width: 100%;
+        padding: 0px 20px;
+        transform: rotate(-6.3deg);
+    }
+
+    .section-card__box p {
+        font-size: 18px;
+    }
+    .section-card__box p br {
+      display: block;
+    }
+    .footer__left h3{
+        font-size: 24px;
+    }
+    .footer__left p {
+        font-size: 18px;
+    }
+    .footer__left-cards li span {
+        font-size: 16px;
+    }
+
+    .reg_card h2{
+        font-size: 20px;
+    }
+    .reg_card {
+        width: 100%;
+    }
+
+    .footer__right {
+        margin-top: 30px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .content__left{
+        width: 100%;
+    }
+    .content__left img {
+        position: static;
+        width: 100%;
+    }
+
+    .content__right {
+        position: static;
+        width: 100%;
+    }
+    .content__right-card{
+        width: 100%;
+        padding: 15px;
+    }
+    .content__right-card h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .content__right-card span {
+        font-size: 20px;
+    }
+    .content__right-card li p {
+        font-size: 16px;
+    }
+    .btn-link{
+        width: 100%;
+    }
+
 }
