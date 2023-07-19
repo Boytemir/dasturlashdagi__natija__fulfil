@@ -227,7 +227,7 @@ header {
 
 .header__left-main .prace {
     color: #FFF;
-    font-family: Poppins;
+    font-family: var(--poppins);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -604,34 +604,60 @@ main .main-cards__card:nth-child(6) p {
 
 .content {
     display: flex;
+    height: 100vh;
 }
 
 .content__left{
-    width: 40%;
+    width: 45%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.20);
+    position: relative;
 }
 
 .content__left img {
-    width: 100%;
+    width: 800px;
+    position: absolute;
+    bottom: 0;
+    right: -150px;
 }
 
 .content__right {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 55%;
+    background: #363749;
 }
 
 .content__right-card {
     width: 650px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 31px;
 }
 
 .content__right-card h2 {
     color: #FFF;
-    font-family: Poppins;
+    font-family: var(--poppins);
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: 66.75px;
+}
+
+.progress-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.progress-card p {
+    color: #FFF;
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .progress {
@@ -646,5 +672,125 @@ main .main-cards__card:nth-child(6) p {
     background: #17A4D0;
     height: 100%;
     width: 90%;
+}
 
+.content__right-card span {
+    color: #FFF;
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.content__right-card li {
+    display: flex;
+    align-items: center;
+}
+
+.content__right-card li p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content__right-card li p .text-colors {
+    color: #3FE2F8;
+    font-family: var(--poppins);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn-link {
+    width: 436px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #D0177B;
+    border: 2px solid #D0177B;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.btn-link:hover {
+    background-color: transparent;
+    color: #D0177B;
+}
+
+
+@media screen and (min-width: 1900px) {
+    .container {
+       width: 1500px;
+       display: flex;
+       flex-direction: column;
+       margin: auto;
+    }
+}
+
+@media screen and (max-width: 820.99px)  {
+    header{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 30px;
+    }
+
+    .header__left {
+        width: 100%;
+    }
+
+    .header__right {
+        width: 100%;
+        position: static;
+    }
+
+    .calendar{
+        width: 100%;
+    }
+
+    .header__left-bonusCard{
+        width: 100%;
+    }
+
+    .royxat__card {
+        transform: rotate(7.4deg) translateY(59px);
+    }
+
+    main .main-cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 30px;
+    }
+
+    .section-card__box {
+        transform: rotate(-7.3deg);
+    }
+
+    .footer {
+        padding: 30px 30px;
+    }
+
+    .footer__left{
+        width: 100%;
+    }
+
+    .footer__right{
+        width: 100%;
+        position: static;
+        right: auto;
+    }
+
+    .footer__right img {
+        width: 100%;
+    }
 }
