@@ -45,7 +45,7 @@ body {
     display: flex;
 }
 
-i {
+i.x {
     position: absolute;
     color: #000;
     right: 20px;
@@ -154,9 +154,33 @@ header {
     border-radius: 500px;
 }
 
-.calendar img {
-    width: 20px;
-    height: 22.115px;
+.calendar .fa-calendar-days {
+    font-size: 20px;
+    animation: 2.5s anm infinite linear;
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes anm {
+    0%{
+        opacity: 1;
+        background: linear-gradient(45deg, #00dbde , #fc00ff );
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    50% {
+        opacity: 0;
+        background: linear-gradient(45deg, #fc00ff, #00dbde);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100% {
+        opacity: 1;
+        background: linear-gradient(45deg, #00dbde, #fc00ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .calendar strong {
@@ -300,6 +324,7 @@ header {
 }
 
 .btn {
+    width: 65%;
     background-color: var(--btn-color);
     border: 2px solid #D0177B;
     border-radius: 500px;
