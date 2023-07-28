@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
     --back_1: rgba(31, 32, 48, 1);
-    --back__g: rgba(127, 23, 208, 1);
-    --back__g2: rgba(208, 23, 123, 1); 
+    --back__g: #7f17d0;
+    --back__g2: #d0177b; 
     --btn-color: rgba(40, 182, 246, 1);
     --font-color: rgba(255, 255, 255, 1);   
     --poppins: 'Poppins', sans-serif;
